@@ -1,0 +1,66 @@
+﻿@model MSSAJobBoard_w_Login.Recruiter
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Rectuiter Details</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            First Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FName)
+        </dd>
+
+        <dt>
+            Last Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LName)
+        </dd>
+
+        <dt>
+            eMail Address
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eMailAddress)
+        </dd>
+
+        <dt>
+            Phone Number
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            LinkedIn
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkedIn)
+        </dd>
+
+        <dt>
+            Company Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) 
+    @Html.ActionLink("Back to List", "Index")
+</p>

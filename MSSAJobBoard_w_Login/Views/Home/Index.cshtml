@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" style="background-color:black">
+
+    <h1>Home of the Unwanted MSSA Jobs</h1>
+    <p class="lead">This Job Board was created to host jobs found by MSSA Students that they either declined to take, interviewed with but didn't get accepted, or found via a recruiter and aren't interested in.</p>
+
+    <p>
+        <a href="~/Jobs/Index" class="btn btn-primary btn-lg">Search Jobs</a>
+    </p>
+    <p>
+        <a href="~/Recruiters/Index" class="btn btn-primary btn-lg">Search Recruiters </a>
+    </p>
+
+
+
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Add a Job</h2>
+        <p>Did you find a job that just isn't right for you? Did you get an email from a recruiter looking for someone in a place that's not your jam? Click below so your Cohort can take a look, someone could be very interested.</p>
+        <p><a href="~/Jobs/Create" class="btn btn-primary btn-lg">Add a Job </a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Add a Recruiter</h2>
+        <p>
+            Get started by adding the contact information of the Recruiter who you've been dealing with. This will help others reach out to helpful recruiters interested in filling positions with MSSA Grads.
+        </p>
+        <p><a href="~/Recruiters/Create" class="btn btn-primary btn-lg">Add Recruiter</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Add a Company</h2>
+        <p>Did you find a company that loves to hire vets? Tell us who it is!</p>
+        <a href="~/Companies/Create" class="btn btn-primary btn-lg">Add a Company </a>
+    </div>
+</div>
